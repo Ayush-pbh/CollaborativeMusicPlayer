@@ -1,0 +1,64 @@
+body{
+    margin:0;
+    padding:0;
+}
+
+.navigationpane{
+    height: 10%;
+    width: 100%;
+    background-color: red;
+    position: absolute;
+    bottom: 0px;
+    left:0px;
+
+}
+
+.homepage{
+    height: 90%;
+    width: 100%;
+    background-color: rgba(255, 127, 80, 0.641);
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+.player{
+    height: 90%;
+    width: 100%;
+    background-color: #f7b3b3;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.albumart{
+    height: 400px;
+    width: 400px;
+    background-color: lightblue;
+    position: absolute;
+    top: calc(40% - 200px);
+    left: calc(50% - 200px);
+
+    background-image: url('./testImage.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+    border-radius: 10px;
+}
+.controls{
+    position: absolute;
+    height: 90px;
+    width: 400px;
+    top: calc(40% + 230px);
+    left: calc(50% - 200px);
+}
+.btn{
+    height: 70px;
+    width: 70px;
+    background-color: aquamarine;
+    display: inline-block;
+    margin-left: 45px;
+}
+
+#myaudiopalyer{
+    display: none;
+}

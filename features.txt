@@ -1,0 +1,8 @@
+Features
+    -- Song Play Pause
+    -- Prev Song. Next Song -- playlist
+    -- Search Song
+    -- Liked Songs
+    -- Shuffle & Loops
+    -- Share Songs
+
