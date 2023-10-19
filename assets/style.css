@@ -6,7 +6,7 @@ body{
 .navigationpane{
     height: 10%;
     width: 100%;
-    background-color: red;
+    background-color: rgb(61, 150, 218);
     position: absolute;
     bottom: 0px;
     left:0px;
@@ -16,7 +16,7 @@ body{
 .homepage{
     height: 90%;
     width: 100%;
-    background-color: rgba(255, 127, 80, 0.641);
+    background-color: rgba(153, 144, 141, 0.641);
     position: absolute;
     top:0;
     left:0;
@@ -25,7 +25,7 @@ body{
 .player{
     height: 90%;
     width: 100%;
-    background-color: #f7b3b3;
+    background-color: #b28f8f;
     position: absolute;
     top:0;
     left:0;
@@ -38,7 +38,7 @@ body{
     top: calc(40% - 200px);
     left: calc(50% - 200px);
 
-    background-image: url('./testImage.jpg');
+    background-image: url('./honey-singh-1280.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;   
@@ -54,7 +54,7 @@ body{
 .btn{
     height: 70px;
     width: 70px;
-    background-color: aquamarine;
+    background-color: rgb(59, 144, 168);
     display: inline-block;
     margin-left: 45px;
 }
