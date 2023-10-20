@@ -7,12 +7,35 @@
     <body>
 
         <div class="homepage">
+            <div class="searchBar">
+                <input type="text" name="searchquery" id="searchquery" placeholder="Search Songs here!">
+                <div class="searchTrigger" onclick="searchSong()"></div>
+            </div>
+            
+            <div class="songList">
+                <div class="song" onclick="playSongFromUI(0)">
+                    <div class="songAlbumArt" style="background-image: url('./assets/pic1.jpg') "></div>
+                    <h1 class="songName">My Song</h1>
+                </div>
+                
+                <div class="song" onclick="playSongFromUI(1)">
+                    <div class="songAlbumArt" style="background-image: url('./assets/pic2.jpg') "></div>
+                    <h1 class="songName">My Song</h1>
+                </div>
+                
+                <div class="song" onclick="playSongFromUI(2)">
+                    <div class="songAlbumArt" style="background-image: url('./assets/pic3.jpg') ">
+                    </div>
+                <h1 class="songName">My Song</h1>
+                </div>
+            </div>
         </div>
         
-        <div class="player">
+        <div class="player minimize" >
+            <div id="minimizeTrigger" onclick="toggleMinimizePlayer()"></div>
+            <h1 id="playerStatus">Current Playing : None</h1>
             <div class="albumart" id="albumart"></div>
             <div class="controls">
-
                 <div class="btn" id="prev-btn" onclick="prevSong()"></div>
                 <div class="btn" id="play-pause-btn" onclick="togglePlayPause()"></div>
                 <div class="btn" id="next-btn" onclick = "nextSong()"></div>
@@ -20,8 +43,8 @@
             </div>
         </div>
 
-        <div class="search"></div>  
         <div class="playlist"></div>
+        <div class="search"></div>  
         
         <div class="navigationpane">
 

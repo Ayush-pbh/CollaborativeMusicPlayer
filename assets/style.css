@@ -4,10 +4,10 @@ body{
 }
 
 .navigationpane{
+    position: fixed;
     height: 10%;
     width: 100%;
     background-color: rgb(61, 150, 218);
-    position: absolute;
     bottom: 0px;
     left:0px;
 
@@ -17,7 +17,7 @@ body{
     height: 90%;
     width: 100%;
     background-color: rgba(153, 144, 141, 0.641);
-    position: absolute;
+    position: fixed;
     top:0;
     left:0;
 }
@@ -29,6 +29,15 @@ body{
     position: absolute;
     top:0;
     left:0;
+    position: fixed;
+
+    transition: all .5s ease;
+}
+.player.minimize{
+    height: 10%;
+    overflow: hidden;
+    bottom: 0;
+    top:80%;
 }
 .albumart{
     height: 400px;
@@ -38,7 +47,7 @@ body{
     top: calc(40% - 200px);
     left: calc(50% - 200px);
 
-    background-image: url('./honey-singh-1280.jpg');
+    background-image: url('./pic1.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;   
@@ -61,4 +70,84 @@ body{
 
 #myaudiopalyer{
     display: none;
+}
+
+#minimizeTrigger{
+    height: 40px;
+    width: 40px;
+    background: #111;
+    margin: 20px;   
+}
+
+.searchBar{
+    height: 50px;
+    width: 100%;
+    background-color: pink;
+    position: fixed;
+    top:0;
+    left:0;
+    display: flex;
+}
+
+.searchBar input{
+    height: 40px;
+    width: 80%;
+    margin-top:2.5px;
+    border: 2px dashed #111;
+    border-radius: 10px;
+    font-size: 21px;
+}
+
+.searchBar .searchTrigger{
+    height: 40px;
+    width: 40px;
+    background-color: #111;
+    margin-top:5px;
+    margin-left:20px;
+}
+
+.songList{
+    margin-top: 70px;
+    overflow-y: scroll ;
+    height: calc(80% - 20px);
+}
+
+.song{
+    height: 200px;
+    width: 200px;
+    background-color: darkorchid;
+    margin:20px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 0px #111;
+    overflow: hidden;
+    transition: all .1s ease;
+    position: relative;
+    display: inline-block;
+}
+.song:hover{
+    box-shadow: 2px 2px 20px 0px #111;
+    transform: translate(-2px , -2px);
+}
+
+.song .songAlbumArt{
+    height: 100%;
+    width: 100%;
+    /* background: url() cover no-repeat fixed center; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+}
+
+.song .songName{
+    position: absolute;
+    bottom:10px;
+    font-size: 20px;
+    color: #ccc;
+    left:20px;
+    padding:0;
+    margin:0;
+    background:#111;
+    padding: 10px;
+    border-radius: 10px;
 }
