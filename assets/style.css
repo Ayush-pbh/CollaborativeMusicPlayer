@@ -39,6 +39,13 @@ body{
     bottom: 0;
     top:80%;
 }
+.player.minimize .likesongtrigger{
+    display: none;
+}
+
+.player .likesongtrigger{
+    display: block;
+}
 .albumart{
     height: 400px;
     width: 400px;
@@ -76,7 +83,7 @@ body{
     height: 40px;
     width: 40px;
     background: #111;
-    margin: 20px;   
+    margin: 20px;
 }
 
 .searchBar{
@@ -150,4 +157,26 @@ body{
     background:#111;
     padding: 10px;
     border-radius: 10px;
+}
+
+.likedSongIcon{
+    height: 40px;
+    width: 40px;
+    background-color: pink;
+    border: 2px solid #111;
+    position: absolute;
+    bottom:10px;
+    right: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.likesongtrigger{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: purple;
+    border-radius: 10px;
+
+    height: 70px;
+    width: 70px;
 }
